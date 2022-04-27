@@ -1,24 +1,12 @@
-# chart-lib
+외부 라이브러리 모듈화
 
-## Project setup
-```
-npm install
-```
+> 1. 이유 : Vue.js관련 라이브라리가 없을 때 일반 라이브러리를 결합 할수 있어야 함
+> 2. 종류 :
+>    1. 차트
+>    2. 데이트 피커
+>    3. 테이블
+>    4. 스피너
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. 차트 라이브러리 NPM으로 설치
+2. 설치된 라이브러리를 IMPORT로 App.vue에서 로딩
+3. mounted() 라이프사이클 훅에서 차트를 그림
