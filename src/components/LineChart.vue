@@ -3,9 +3,9 @@
 </template>
 
 <script>
-import { Chart, registerables } from 'chart.js';
+// import { Chart, registerables } from 'chart.js';
 
-Chart.register(...registerables);
+// Chart.register(...registerables);
 
 export default {
   mounted() {
@@ -30,9 +30,9 @@ export default {
     };
 
     // const myChart = new Chart(document.getElementById('lineChart'), config);
-    const myChart = new Chart(this.$refs.lineChart, config);
+    const lineChart = new this.$_Chart(this.$refs.lineChart, config);
 
-    console.log(myChart);
+    console.log(lineChart);
   },
 };
 </script>

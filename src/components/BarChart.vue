@@ -3,15 +3,15 @@
 </template>
 
 <script>
-import { Chart, registerables } from 'chart.js';
+// import { Chart, registerables } from 'chart.js';
 
-Chart.register(...registerables);
+// Chart.register(...registerables);
 
 export default {
   mounted() {
     // const ctx = document.getElementById('barChart');
     // const ctx = this.$refs.barChart;
-    const myChart = new Chart(this.$refs.barChart, {
+    const myChart = new this.$_Chart(this.$refs.barChart, {
       type: 'bar',
       data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
