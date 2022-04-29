@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div ref="app" id="app">hello</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div ref="app" id="app">hello</div>
 
-    <script>
-      ////////////////// 결과 동일  /////////////////////
-      var divElement = document.getElementById('app');
-      var divElement = document.querySelector('#app');
-      var divElement = $('#app'); // jQuery식 돔 접근자
-      var divElement = this.$refs.app;
-      /////////////////////////////////////////////////
+        <script>
+            /////////////// 결과 동일  //////////////////
+            var divElement = document.getElementById('app');
+            var divElement = document.querySelector('#app');
+            var divElement = $('#app'); // jQuery식 돔 접근자
+            var divElement = this.$refs.app;
+            ////////////////////////////////////////////////
 
-      // 😮😮 refs 속성의 장점 : 해당 컴포넌트 안에서만 적용되기 때문에, 동일한 id로 인한 충돌을 방지할 수 있다. 😮😮
-    </script>
-  </body>
+            // 😮😮 refs 속성의 장점 : 해당 컴포넌트 안에서만 적용되기 때문에, 동일한 id로 인한 충돌을 방지할 수 있다. 😮😮
+        </script>
+    </body>
 </html>
